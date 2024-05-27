@@ -202,7 +202,7 @@ class DelitoDeleteView(DeleteView):
 class RegistrarRateroView(CreateView):
     model = Delincuente
     form_class = DelincuenteForm
-    template_name = 'infoDelincuente\delincuente_form.html'
+    template_name = 'infoDelincuente/delincuente_form.html'
     success_url = reverse_lazy('ubicacion_app:Inicio')
 
     def form_valid(self, form):
